@@ -1,8 +1,10 @@
 import java.util.*;
 
 public class pattern {
-    public static void main(String[] args){
+
+    public static void Display(){
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter the number : ");
         int n = sc.nextInt();
         for(int i=1; i<=n; i++){
@@ -12,5 +14,8 @@ public class pattern {
             System.out.println();
         }
         sc.close();
+    }
+    public static void main(String[] args){
+        Display();
     }
 }
