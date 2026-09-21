@@ -22,9 +22,9 @@ public class pattern {
         System.out.print("Enter the number : ");
         int n = sc.nextInt();
         int i = 1;
-        while(i < n){
+        while(i <= n){
             int j = 1;
-            while(j < i + 1){
+            while(j <= i){
                 System.out.print("* ");
                 j++;
             }
@@ -34,7 +34,25 @@ public class pattern {
         sc.close();
     }
     public static void main(String[] args){
-        //Display_1();// for looe
-        Display_2();// while loop
+        Scanner sc = new Scanner(System.in);
+        while (true) {
+            System.out.println("1. Display Using For Loop.");
+            System.out.println("2. Display Using While Loop.");
+            System.out.print("Enter 1 or 2 : ");
+            int choice = sc.nextInt();
+
+            if(choice == 1){
+                Display_1();
+                break;
+            }
+            else if(choice == 2){
+                Display_2();
+                break;
+            }
+            else{
+                System.out.println("Enter valid Choice.!");
+            }
+        }
+        sc.close();
     }
 }
